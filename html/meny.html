@@ -30,68 +30,74 @@
             width: 100%;
         }
     </style>
-    <title>Meny</title>
+    <title>Startsida</title>
 </head>
 
 <body class="bg-gray-100">
     <div class="container mx-auto p-4">
         <!-- Header -->
         <header class="flex justify-between items-center bg-green-900 p-4 rounded shadow-lg mb-8">
-            <a class="site-logo__btn" href="/">
+            <a class="site-logo__btn" href="index.html">
                 <img class="site-logo__expanded w-16 h-16"
-                    src="https://images.getbento.com/accounts/b5176a04370ff122380dcee937fe2565/media/images/5538HSD-LOGO-ROUND_-white_fill_1.png"
+                    src="../images/highStMarketDeliLogo.png"
                     alt="High Street Deli Home">
             </a>
             <nav class="flex space-x-8">
                 <ul class="flex space-x-4 text-lg">
                     <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="index.html">STARTSIDAN</a></li>
-                    <li class="bokabord"><a class="text-white hover:text-yellow-500 transition duration-300 font-courier"
-                            href="../html/bokabord.html">BOKA HÄR!</a></li>
+                    <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="meny.html">SE MENY</a></li>
+                    <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="bokabord.html">BOKA HÄR!</a></li>
                 </ul>
             </nav>
         </header>
 
+
         <!-- Main Content -->
         <main class="mb-8">
-            <section class="main1">
-                <img src="../images/highStreetDeli933.jpg"
-                    class="img1 w-full h-auto rounded-lg shadow-lg mb-8" alt="Bild på hamburgermeny">
-            </section>
+            <!-- Hero Section -->
+        <section class="hero bg-cover bg-center mb-8 rounded shadow-lg"
+        style="background-image: url('../images/highStreetDeli933.jpg'); height: 500px;">
+        <div class="flex items-center justify-center h-full  rounded">
+            <h1 class="text-white text-6xl font-bold font-courier ">Vad är du sugen på?</h1>
+        </div>
+    </section>
 
-            <section class="main2 bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-center text-green-900 text-5xl font-bold mb-6 font-courier">MENY</h2>
-                <h3 class="text-center text-green-900 text-3xl font-bold mb-4 font-courier">Vad får vi lov att fresta med?</h3>
-                <div class="menu-container font-courier">
-                    <p class="text-green-900 text-lg leading-relaxed font-bold font-courier">
+             <!-- Menu Section -->
+        <section class="menu bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-center text-green-900 text-5xl font-bold mb-6 font-courier">MENY</h2>
+            <h3 class="text-center text-green-900 text-3xl font-bold mb-4 font-courier">Vad får vi lov att fresta med?</h3>
+            <div class="menu-container font-courier">
+                <div class="text-green-900 text-lg leading-relaxed font-bold font-courier text-center">
+                    <h4 class="text-2xl font-bold mb-2">CALIFORNIA TURKEY (OR BEEF)</h4>
+                    Roast turkey or beef, green chile, melted pepper jack, the works, avocado, toasted sliced sourdough.
+                    <span class="block mt-2 mb-4">$12.50</span>
 
-                        <h4 class="text-2xl font-bold mb-2">CALIFORNIA TURKEY (OR BEEF)</h4>
-                        Roast turkey or beef, green chile, melted pepper jack, the works, avocado, toasted sliced sourdough.
-                        <span class="block mt-2 mb-4">$12.50</span>
+                    <h4 class="text-2xl font-bold mb-2">DUTCH PUNCH</h4>
+                    Smoked turkey, extra bacon, jalapeño havarti, red onion, tomato, romaine, avocado, chipotle mayo,
+                    Dutch crunch.
+                    <span class="block mt-2 mb-4">$12.50</span>
 
-                        <h4 class="text-2xl font-bold mb-2">DUTCH PUNCH</h4>
-                        Smoked turkey, extra bacon, jalapeño havarti, red onion, tomato, romaine, avocado, chipotle mayo, Dutch crunch.
-                        <span class="block mt-2 mb-4">$12.50</span>
+                    <h4 class="text-2xl font-bold mb-2">HOT PASTRAMI</h4>
+                    Lean roast pastrami, melted Swiss, the works, pepperoncini, toasted sliced sourdough.
+                    <span class="block mt-2 mb-4">$12.50</span>
 
-                        <h4 class="text-2xl font-bold mb-2">HOT PASTRAMI</h4>
-                        Lean roast pastrami, melted Swiss, the works, pepperoncini, toasted sliced sourdough.
-                        <span class="block mt-2 mb-4">$12.50</span>
+                    <h4 class="text-2xl font-bold mb-2">NEW YORK</h4>
+                    Pastrami, melted Swiss, extra meat, extra cheese, mayo, dijon, yellow mustard, extra pickle, toasted
+                    sliced rye.
+                    <span class="block mt-2 mb-4">$13.75</span>
 
-                        <h4 class="text-2xl font-bold mb-2">NEW YORK</h4>
-                        Pastrami, melted Swiss, extra meat, extra cheese, mayo, dijon, yellow mustard, extra pickle, toasted sliced rye.
-                        <span class="block mt-2 mb-4">$13.75</span>
-
-                        <h4 class="text-2xl font-bold mb-2">SPRING CLUB</h4>
-                        Roast turkey, bacon, melted cheddar, ranch, shrettuce, cucumber, tomato, mayo, French roll.
-                        <span class="block mt-2 mb-4">$12.50</span>
-                    </p>
+                    <h4 class="text-2xl font-bold mb-2">SPRING CLUB</h4>
+                    Roast turkey, bacon, melted cheddar, ranch, shrettuce, cucumber, tomato, mayo, French roll.
+                    <span class="block mt-2 mb-4">$12.50</span>
                 </div>
-            </section>
+            </div>
+        </section>
         </main>
 
         <!-- Aside Content -->
         <aside class="my-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="aside1 img-container">
-                <img src="https://dilens.se/wp-content/uploads/2019/02/Hamburgare-1-1.jpg"
+                <img src="../images/cheeseBurger.jpeg"
                     class="img2 rounded-lg shadow-lg" alt="Bild på Cheeseburgare">
             </div>
             <div class="aside2 img-container">

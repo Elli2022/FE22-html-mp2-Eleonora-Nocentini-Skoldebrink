@@ -9,31 +9,62 @@
     <title>Boka bord</title>
 </head>
 
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .font-courier {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .text-green-900 {
+        color: #334834;
+    }
+
+    .img-container {
+        height: 20rem;
+        overflow: hidden;
+    }
+
+    .img-container img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+</style>
+<title>Startsida</title>
+</head>
+
 <body class="bg-gray-100">
-        <div class="container mx-auto p-4">
-            <!-- Header -->
-            <header class="flex justify-between items-center bg-green-900 p-4 rounded shadow-lg mb-8">
-                <a class="site-logo__btn" href="/">
-                    <img class="site-logo__expanded w-16 h-16"
-                        src="https://images.getbento.com/accounts/b5176a04370ff122380dcee937fe2565/media/images/5538HSD-LOGO-ROUND_-white_fill_1.png"
-                        alt="High Street Deli Home">
-                </a>
-                <nav class="flex space-x-8">
-                    <ul class="flex space-x-4 text-lg">
-                        <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="index.html">STARTSIDAN</a></li>
-                        <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="meny.html">SE MENY</a></li>
-                        <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="bokabord.html">BOKA HÄR!</a></li>
-                    </ul>
-                </nav>
-            </header>
+<div class="container mx-auto p-4">
+    <!-- Header -->
+    <header class="flex justify-between items-center bg-green-900 p-4 rounded shadow-lg mb-8">
+        <a class="site-logo__btn" href="index.html">
+            <img class="site-logo__expanded w-16 h-16"
+                src="../images/highStMarketDeliLogo.png"
+                alt="High Street Deli Home">
+        </a>
+        <nav class="flex space-x-8">
+            <ul class="flex space-x-4 text-lg">
+                <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="index.html">STARTSIDAN</a></li>
+                <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="meny.html">SE MENY</a></li>
+                <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="bokabord.html">BOKA HÄR!</a></li>
+            </ul>
+        </nav>
+    </header>
 
         <!-- Main Content -->
         <main class="mb-8">
-            <section class="main1">
-                <img src="../../images/highStreetMarjetAndDeli.jpg" class="img1 w-full h-auto rounded-lg shadow-lg mb-8" alt="Bild på hamburgermeny">
-            </section>
+            <section class="hero bg-cover bg-center mb-8 rounded shadow-lg"
+        style="background-image: url('../images/highStreetMarjetAndDeli.jpg'); height: 500px;">
+        <div class="flex items-center justify-center h-full  rounded">
+            <h1 class="text-white text-6xl font-bold font-courier ">Säkra din plats!</h1>
+        </div>
+    </section>
+            
 
-            <section class="main2 bg-white p-6 rounded-lg shadow-lg">
+            <section class="main2 bg-white p-6 rounded-lg shadow-lg font-courier">
                 <h2 class="text-center text-green-900 text-5xl font-bold mb-6">BOKA BORD</h2>
                 <h3 class="text-center text-gray-700 text-2xl mb-6">Säkra din plats nu!</h3>
 
@@ -67,21 +98,20 @@
             </section>
         </main>
 
-        <!-- Aside Content -->
-        <!-- Gallery Section -->
-        <section class="gallery my-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+         <!-- Aside Content -->
+         <aside class="my-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="aside1 img-container">
-                <img src="https://dilens.se/wp-content/uploads/2019/02/Hamburgare-1-1.jpg"
+                <img src="../images/cheeseBurger.jpeg"
                     class="img2 rounded-lg shadow-lg" alt="Bild på Cheeseburgare">
             </div>
             <div class="aside2 img-container">
                 <img src="https://images.squarespace-cdn.com/content/v1/54dabf38e4b06c67da923d72/1604008240758-G3WEGDKR7R0JBQOV9A4E/BrowserPreview_tmp-2.jpg?format=1500w"
                     class="img3 rounded-lg shadow-lg" alt="">
             </div>
-        </section>
+        </aside>
 
         <!-- Footer -->
-        <footer class="bg-green-900 p-6 text-center text-white rounded-lg shadow-lg mt-8">
+        <footer class="bg-green-900 p-4 rounded text-center text-white font-courier shadow-lg mt-8">
             <div class="instagram-grid__item">
                 <p>
                     HighSt <br>
@@ -89,7 +119,6 @@
                     213 71 Malmö <br>
                     +46 40 44 20 25 <br>
                 </p>
-                <a class="hover:text-yellow-500 transition duration-300" href="mailto:highst@example.com">highst@example.com</a>
             </div>
         </footer>
     </div>
