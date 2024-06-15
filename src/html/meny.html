@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../../dist/output.css" rel="stylesheet">
     <title>Meny</title>
     <style>
         body {
@@ -30,17 +30,17 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-100">
 <div class="container mx-auto p-4">
     <!-- Header -->
     <header class="flex justify-between items-center bg-green-900 p-4 rounded shadow-lg mb-8">
-        <a class="site-logo__btn" href="index.html">
+        <a class="site-logo__btn" href="../index.html">
             <img class="site-logo__expanded w-16 h-16" src="../images/highStMarketDeliLogo.png" alt="High Street Deli Home">
         </a>
         <nav class="flex space-x-8">
             <ul class="flex space-x-4 text-lg">
-                <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="index.html">STARTSIDAN</a></li>
-                <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="meny.html">SE MENY</a></li>
+                <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="../index.html">STARTSIDAN</a></li>
                 <li><a class="text-white hover:text-yellow-500 transition duration-300 font-courier" href="bokabord.html">BOKA HÄR!</a></li>
             </ul>
         </nav>
@@ -48,13 +48,16 @@
 
     <!-- Main Content -->
     <main class="mb-8">
-        <section class="main1">
-            <img src="../images/highStreetDeli933.jpg" class="img1 w-full h-auto rounded-lg shadow-lg mb-8" alt="Bild på hamburgermeny">
-        </section>
+        <section class="hero bg-cover bg-center mb-8 rounded shadow-lg"
+        style="background-image: url('../images/highStreetMarjetAndDeli.jpg'); height: 500px;">
+        <div class="flex items-center justify-center h-full rounded">
+            <h1 class="text-white text-6xl font-bold font-courier">Vår Meny</h1>
+        </div>
+    </section>
 
-        <section class="main2 bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-center text-green-900 text-5xl font-bold mb-6 font-courier">MENY</h2>
-            <h3 class="text-center text-green-900 text-3xl font-bold mb-4 font-courier">Vad får vi lov att fresta med?</h3>
+        <section class="main2 bg-white p-6 rounded-lg shadow-lg font-courier">
+            <h2 class="text-center text-green-900 text-5xl font-bold mb-6">MENY</h2>
+            <h3 class="text-center text-gray-700 text-2xl mb-6">Vad får vi lov att fresta med?</h3>
             <div class="menu-container font-courier">
                 <p class="text-green-900 text-lg leading-relaxed font-bold font-courier">
                     <h4 class="text-2xl font-bold mb-2">CALIFORNIA TURKEY (OR BEEF)</h4>
@@ -104,4 +107,5 @@
     </footer>
 </div>
 </body>
+
 </html>
