@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/output.css" rel="stylesheet">
-    <title>Startsida</title>
+    <title>Boka bord</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -53,6 +53,39 @@
                 <h1 class="text-white text-6xl font-bold font-courier">Säkra din plats!</h1>
             </div>
         </section>
+
+        <section class="main2 bg-white p-6 rounded-lg shadow-lg font-courier">
+            <h2 class="text-center text-green-900 text-5xl font-bold mb-6">BOKA BORD</h2>
+            <h3 class="text-center text-gray-700 text-2xl mb-6">Säkra din plats nu!</h3>
+
+            <div class="form-container">
+                <form action="" method="get" class="form-example space-y-4">
+                    <div class="form-example">
+                        <label for="name" class="block text-gray-700 font-semibold">Ditt namn:</label>
+                        <input type="text" name="name" id="name" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    </div>
+                    <div class="form-example">
+                        <label for="email" class="block text-gray-700 font-semibold">Din email:</label>
+                        <input type="email" name="email" id="email" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    </div>
+                    <div class="form-example">
+                        <label for="date" class="block text-gray-700 font-semibold">Datum:</label>
+                        <input type="date" name="date" id="date" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    </div>
+                    <div class="form-example">
+                        <label for="time" class="block text-gray-700 font-semibold">Tid:</label>
+                        <input type="time" name="time" id="time" required class="w-full p-2 border border-gray-300 rounded-lg">
+                    </div>
+                    <div class="form-example">
+                        <label for="textarea" class="block text-gray-700 font-semibold">Övriga önskemål:</label>
+                        <textarea name="textarea" id="textarea" style="height: 100px" class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+                    </div>
+                    <div class="form-example text-center">
+                        <input type="submit" value="Skicka" class="px-4 py-2 bg-green-900 text-white rounded-lg hover:bg-green-700 transition duration-300 cursor-pointer">
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Aside Content -->
@@ -74,7 +107,6 @@
                 213 71 Malmö <br>
                 +46 40 44 20 25 <br>
             </p>
-            <a class="hover:text-yellow-500 transition duration-300" href="mailto:highst@example.com">highst@example.com</a>
         </div>
     </footer>
 </div>
