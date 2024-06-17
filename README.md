@@ -35,34 +35,6 @@ Follow these steps to install and run the project locally:
 
 6. Open your browser and go to `http://127.0.0.1:8080` to view the website.
 
-## File Structure
-
-The project's file structure is as follows:
-
-HighStDeliAndMarketImitation/
-│
-├── dist/
-│ └── output.css
-│
-├── node_modules/
-│
-├── src/
-│ ├── css/
-│ │ └── styles.css
-│ ├── html/
-│ │ ├── bokabord.html
-│ │ └── meny.html
-│ ├── images/
-│ │ ├── cheeseBurger.jpeg
-│ │ ├── highStMarketDeliLogo.png
-│ │ ├── highStreetDeli933.jpg
-│ │ └── highStreetMarjetAndDeli.jpg
-│ └── index.html
-│
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── tailwind.config.js
 
 
 ## Deployment
